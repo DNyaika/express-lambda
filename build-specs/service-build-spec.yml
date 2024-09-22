@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install -g npm@9  # Install the desired npm version
+      - echo "Installing project dependencies"
+      - npm install
+artifacts:
+  files:
+    - '**/*'
