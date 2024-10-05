@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  throw new Error("Missing required field: requiredField");
+  res.send("Hello, World!");
 } );
 
 const PORT = 8080;
