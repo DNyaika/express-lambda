@@ -7,7 +7,7 @@ test("Service should return 'Hello, World!'", async () => {
         const response = await axios.get(process.env.SERVICE_URL);
         expect(response.data).toBe("Hello, World!");
     } catch (err) {
-        //console.error("Error during the API call:", err);
-       // throw err;  // Rethrow to ensure the test fails
+        console.error("Error during the API call:", err);
+       throw err;  // Rethrow to ensure the test fails
     }
 });
